@@ -1,0 +1,101 @@
+/* 导航栏 */
+.topbar{
+	background-color:rgb(24,24,24);
+	height: 40px;
+	width: 100%;
+	position:static;
+	/*position:fixed;
+	left:0px;
+	top:0px;
+    z-index:9999;*/
+}
+.topbar2{ background-color:#fff; width:100%;}
+
+.topbar_menu, .topbar_menu2{
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+    position:relative;
+}
+
+.topbar_menu form{ position:relative; margin-left:740px;}
+.topbar_menu .search_submit_button{ position:absolute; top:10px; left:197px; display:inline-block; height:20px; width:20px; border:none; background:url('../images/search_icon.png') 0 0 no-repeat; text-indent:-9999px; cursor:pointer;}
+.topbar_menu .search_submit_button:hover{ background-position:0 -20px;}
+
+.topbar_menu2 .hotIcon{ position:absolute; top:13px; left:340px; display:block;}
+.topbar_menu2 .logo{ height:40px;}
+.logo{
+	font-size: 2.2em;
+    color:rgb(24,24,24);
+	margin-left:0px;
+	width: 200px;
+}
+.topbar_intro{ font-size:18px; color:#fff; line-height:40px; float:left; margin-left:10px;}
+
+.topbar_title{ font-weight:bold; font-size:13px; color:rgb(24,24,24); margin-left:10px; float:left; width:60px; line-height:25px;}
+
+#logo_img{ max-height:40px; float:left;}
+
+.navi-wrap{ /*padding-top:22px;*/}
+.navi-wrap2{ float:right; border-left:1px solid #ddd; margin-top:18px;}
+.navi-wrap li, .navi-wrap2 li{ float:left;}
+
+.topbar_button, .topbar_span{
+	font-size: 15px;
+	color:rgb(24,24,24);
+	width: 76px;
+	text-decoration:none;
+	cursor:pointer;
+	/*float: left;*/
+    display: inline-block;
+	text-align:center;
+	height: 25px;
+	line-height:25px;
+}
+.topbar_button:hover{color: rgb(253,152,64)}
+.topbar_span{ cursor:default; font-weight:bold; color:#FD8E18;}
+
+.navi-wrap2 .topbar_button, .navi-wrap2 .topbar_span{ width:auto; padding:0 10px; border-right:1px solid #ddd; font-size:12px;}
+
+.tre{width:5px;height:5px;display:inline-block;overflow:hidden; margin:0 0 1px 3px;}
+.tre em{height:1px;overflow:hidden;display:block;background-color:#666666;}
+.tre em.t1{width:5px;}
+.tre em.t2{margin:0 1px;width:3px;}
+.tre em.t3{margin:0 2px;width:1px;}
+
+
+.search_bar:focus{
+	border-style:none;
+	background-color: white;
+	outline:none;
+}
+
+.search_bar:hover{background-color: white}
+.search_bar{ line-height:22px; height: 22px; width: 220px; border-style:none; border-radius:4px; background-color:#e8e8e8; color: rgb(134,134,134); text-indent:5px; font-size: 13px; margin-top:9px;
+    behavior: url('/static/css/PIE.php');}
+
+.topbar_list ul{ width:92px; background-image:url(about:blank); border:1px solid #ddd;}
+.topbar_list ul.product_list, .product_list .list_button{ width:104px;}
+.list_button{
+	background-color:#fff; 
+	font-size: 12px;
+    color:#181818;
+	text-decoration:none;
+	cursor:pointer;
+	min-height: 22px;
+	width: 92px;
+	margin-top:0px;
+	text-align:left;
+	/*text-indent:10px;*/
+	line-height:22px;
+    float:left;
+    padding-left:0px;
+    padding-right:0px;
+}
+.list_button span{padding-left:10px;}
+.list_button:hover{background-color:rgb(253,152,64); color:#fff;}
+.list_button_current, li.list_button_current a{background-color:rgb(253,152,64); color:#fff;}
+.country_list, .product_list, .majornavi_list{ padding-left:0px;}
+.country_list a, .product_list a, .majornavi_list a{ display:block; color:#181818; text-decoration:none; padding-left:10px; padding-right:10px;}
+.country_list a:hover, .product_list a:hover, .majornavi_list a:hover{ color:#fff;}
+/* 导航栏 END */

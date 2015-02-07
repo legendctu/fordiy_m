@@ -1,0 +1,205 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+body{ font:12px/1.5 "microsoft yahei", "宋体", Tahoma, Verdana, Arial, Helvetica, sans-serif; color:#333; text-align:left; /*word-wrap:break-word;*/}
+/*body{ font:12px/1.5 Microsoft YaHei,\5b8b\4f53, Arial, Verdana; color:#333; text-align:left;}*/
+ul{ list-style:none;}
+button{ border:0 none; padding:0; cursor:pointer;}
+img{ border:0;}
+a{ text-decoration:underline; color:#4f6066}
+.wrap{ width:960px; margin:0 auto;}
+.clear {clear:both;}
+.clear_fix {zoom:1;}
+.clear_fix:after {display:block;clear:both;content:".";visibility:hidden;height:0;font-size:0;}
+.fl{ float:left;}
+.fr{ float:right;}
+.none{ display:none;}
+
+
+body{
+	/*background-color: #e8e8e8;*/
+	background-color: rgb(244,244,242);
+	margin:0px;
+	width: 100%;
+}
+
+/* 导航栏 */
+.topbar{
+	background-color: rgb(24,24,24);
+	height: 40px;
+	width: 100%;
+	position:fixed;
+	left:0px;
+	top:0px;
+    z-index:9999;
+}
+
+.topbar_menu{
+	width: 1150px;
+	height: 40px;
+	margin-left:auto;
+	margin-right:auto;
+    position:relative;
+}
+.topbar_menu form{ position:relative; margin-left:897px;}
+.topbar_menu .search_submit_button{ position:absolute; top:10px; left:197px; display:inline-block; height:20px; width:20px; border:none; background:url('../images/search_icon.png') 0 0 no-repeat; text-indent:-9999px; cursor:pointer;}
+.topbar_menu .search_submit_button:hover{ background-position:0 -20px;}
+
+.topbar_menu .hotIcon{ position:absolute; top:0px; left:350px; display:block;}
+
+.topbar_button{
+	font-size: 13px;
+	/*color: rgb(164,164,164);*/
+    color:#fff;
+	width: 65px;
+	text-decoration:none;
+	cursor:pointer;
+	height: 40px;
+	/*float: left;*/
+    display: inline-block;
+	text-align:center;
+	line-height:40px;
+} 
+.topbar_button:hover{color: rgb(253,152,64)}
+
+.search_bar:focus{
+	border-style:none;
+	background-color: white;
+	outline:none;
+}
+
+.search_bar:hover{background-color: white}
+.search_bar{ line-height:22px; height: 22px; width: 220px; border-style:none; border-radius:4px; background-color:#e8e8e8; color: rgb(134,134,134); text-indent:5px; font-size: 13px; margin-top:9px;
+    behavior: url('/static/css/PIE.php');}
+
+.topbar_list ul{ width:92px; background-image:url(about:blank);}
+.list_button{
+	background-color: rgb(24,24,24); 
+	font-size: 12px;
+	/*color: rgb(164,164,164);*/
+    color:#fff;
+	text-decoration:none;
+	cursor:pointer;
+	min-height: 22px;
+	width: 72px;
+	margin-top: 1px;
+	text-align:left;
+	/*text-indent:10px;*/
+	line-height:22px;
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.list_button:hover{color: rgb(253,152,64)}
+.list_button_current{color: rgb(253,152,64)}
+.country_list, .product_list{ padding-left:2px;}
+.country_list a, .product_list a{ display:block; /*color:rgb(164,164,164);*/ color:#fff; text-decoration:none;}
+.country_list a:hover, .product_list a:hover{ color:rgb(253,152,64);}
+
+.topbar_clear{ height:40px; width:100%;}
+/* 导航栏 END */
+
+
+/* Responsive images */
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image {
+	max-width: 100%;
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+/* Alignment */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+blockquote.alignleft,
+img.alignleft {
+	margin: 7px 24px 7px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 7px 14px 7px 0;
+}
+
+blockquote.alignright,
+img.alignright {
+	margin: 7px 0 7px 24px;
+}
+
+.wp-caption.alignright {
+	margin: 7px 0 7px 14px;
+}
+
+blockquote.aligncenter,
+img.aligncenter,
+.wp-caption.aligncenter {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+/* table */
+.oc_table {
+border-spacing:2px;
+border-collapse:collapse;
+background-color:#FFF;
+border-color:#aaa;
+border-style:outset;
+border-width:1px;
+}
+.oc_table th{
+background-color:#FFF;
+-moz-border-radius:0;
+border-color:#aaa;
+border-style:inset;
+border-width:1px;
+padding:5px;
+background-color:#3F8FD2;
+color:#FFF;
+}
+.oc_table tr:first-child td{ background-color:#3F8FD2; color:#FFF;}
+.oc_table td {
+-moz-border-radius:0;
+border-color:#aaa;
+border-style:inset;
+border-width:1px;
+padding:5px;
+background-color:#C0DDF5;
+/*color:#FFF;*/
+}
+
+
+#iconDivMain1 .additionalPart{ font-size:12px; width:96px; padding:5px 2px 7px; /*background-color:rgb(253,142,24);*/ background-color:#f7ead9; color:#000; border-right:1px solid #8594b5; border-left:1px solid #8594b5;}
+.eva_contact{ line-height:22px; height: 22px; width: 95px; border-style:none; border-radius:4px; color: rgb(134,134,134); text-indent:5px; +text-indent:0px; font-size: 13px; margin-top:5px;
+    /*behavior: url('/static/css/PIE.php');*/}
+#iconDivMain1 .additionPartSubmit{ width:40px; margin:5px auto 7px auto; display:block; border-style:none; font-size:12px; padding:3px 7px; background-color:rgb(255,182,94); color:#fff; font-weight:bold; cursor:pointer;}
+#iconDivMain1 .additionPartSubmit:hover{ background-color:rgb(27,168,219);}
+#iconDivMain1 .eva_btn{ background:#fff url('../images/eva_btn.jpg') 0 0 no-repeat; display:block; width:96px; height:24px; margin:7px auto 0 auto;padding:0px; text-indent:-9999px;}
+
+#back_to_old_ver{ z-index:9999; background:url('../images/back_to_v1.png') 0 0 no-repeat; position:fixed; left:0; top:262px; width:30px; height:116px; text-indent:-9999px;}
+
+.renren{ color:rgb(97,137,216);}
+.sinaweibo{ color:rgb(216,97,97);}
+.qzone{ color:rgb(252,137,58);}
+.weixin{ color:rgb(97,176,137);}
+.qqconnect{color:rgb(216,175,58);}
+.txweibo{ color:rgb(181,181,181);}
